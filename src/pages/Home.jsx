@@ -12,6 +12,7 @@ const Home = () => {
   const onSearch = async ev => {
     ev.preventDefault();
     try {
+      setApiDataError(null);
       const result = await searchForShows(searchStr);
       setApiData(result);
     } catch (error) {
