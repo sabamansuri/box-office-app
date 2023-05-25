@@ -7,3 +7,4 @@ const apiGet = async queryString => {
   //https://api.tvmaze.com/search/shows?q=boys
 };
 export const searchForShows = query => apiGet(`/search/shows?q=${query}`);
+export const searchForPeople = query => apiGet(`/search/people?q=${query}`);
