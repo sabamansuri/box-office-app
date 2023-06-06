@@ -15,7 +15,8 @@ const ShowCard = ({ name, image, id, summary ,onStarMeClick, isStarred}) => {
 
       <div>
         <a href={`/show/${id}`} target='_blank' rel="noreferrer">Read more</a>
-        <button type="button" onClick={() =>onStarMeClick(id)}>{isStarred ? 'Unstar Me ' : 'Star Me'}</button>
+        <button type="button" onClick={() =>onStarMeClick(id)}>
+        {isStarred ? 'Unstar Me ' : 'Star Me'}</button>
       </div>
     </div>
   );
