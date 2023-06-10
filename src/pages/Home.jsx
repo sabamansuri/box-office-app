@@ -14,9 +14,9 @@ const Home = () => {
       filter.searchOptions === 'shows'
         ? searchForShows(filter.q)
         : searchForPeople(filter.q),
-   
+
     enabled: !!filter,
-    refetchOnWindowFocus : false,
+    refetchOnWindowFocus: false,
   });
 
   const onSearch = async ({ q, searchOptions }) => {
@@ -44,6 +44,7 @@ const Home = () => {
 
   return (
     <div>
+     
       <SearchForm onSearch={onSearch} />
 
       <div>{renderApiData()}</div>
