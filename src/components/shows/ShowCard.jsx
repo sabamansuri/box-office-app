@@ -9,10 +9,13 @@ const ShowCard = ({ name, image, id, summary, onStarMeClick, isStarred }) => {
     : 'No description';
 
   const starBtnRef = useRef();
+
   const handleStarClick = () => {
     onStarMeClick(id);
-    const starBtnEl = starBtnEl.current;
+
+    const starBtnEl = starBtnRef.current;
     if (!starBtnEl) return;
+
     if (isStarred) {
       starBtnEl.classList.remove('animate');
     } else {
