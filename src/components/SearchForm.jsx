@@ -27,8 +27,8 @@ const SearchForm = ({ onSearch }) => {
   return (
     <form onSubmit={onSubmit}>
       <SearchInput
-        placeholder="Search for Something"
         type="text"
+        placeholder='Search for Something'
         value={searchStr}
         onChange={onSearchInputChange}
       />
