@@ -1,8 +1,8 @@
 {
+  "homepage": "https://sabamansuri.github.io/box-office-app",
   "name": "box-office",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sabamansuri.github.io/box-office-app",
   "dependencies": {
     "@tanstack/react-query": "^4.29.12",
     "gh-pages": "^5.0.0",
